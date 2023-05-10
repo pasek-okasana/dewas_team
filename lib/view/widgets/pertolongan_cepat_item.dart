@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:iconify_flutter/iconify_flutter.dart'; // For Iconify Widget
-// import 'package:iconify_flutter/icons/material_symbols.dart';
-// import 'package:iconify_flutter/icons/zondicons.dart';
 import '../../utility/theme.dart';
 import 'custom_button_icon.dart';
 
@@ -39,15 +36,15 @@ class PertolonganCepatItem extends StatelessWidget {
   String _imgKategori() {
     switch (kategori) {
       case 'kebakaran':
-        return 'assets/img/img_kategori_kebakaran.png';
+        return 'assets/img/img_kategori_kebakaran.jpg';
       case 'banjir':
-        return 'assets/img/img_kategori_banjir.png';
+        return 'assets/img/img_kategori_banjir.jpg';
       case 'ambulans':
-        return 'assets/img/img_kategori_ambulans.png';
+        return 'assets/img/img_kategori_ambulans.jpg';
       case 'kecelakaan':
-        return 'assets/img/img_kategori_kecelakaan.png';
+        return 'assets/img/img_kategori_kecelakaan.jpg';
       default:
-        return 'assets/img/img_logo_bpbd.png';
+        return 'assets/img/img_logo_bpbd.jpg';
     }
   }
 
