@@ -40,11 +40,11 @@ class PertolonganCepatItem extends StatelessWidget {
       case 'banjir':
         return 'assets/img/img_kategori_banjir.jpg';
       case 'ambulans':
-        return 'assets/img/img_kategori_ambulans.jpg';
+        return 'assets/img/img_kategori_ambulance.jpg';
       case 'kecelakaan':
         return 'assets/img/img_kategori_kecelakaan.jpg';
       default:
-        return 'assets/img/img_logo_bpbd.jpg';
+        return 'assets/img/img_logo_bpbd.png';
     }
   }
 
