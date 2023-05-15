@@ -11,7 +11,7 @@ class CustomButtonIcon extends StatelessWidget {
   final Color color;
   final double fontSize;
   final FontWeight fontWeight;
-  final Container icon;
+  final dynamic icon;
   const CustomButtonIcon({
     super.key,
     required this.title,
