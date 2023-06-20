@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dewas_team">
+    package="com.dimata.dewas_team">
    <application
         android:label="dewas_team"
         android:name="${applicationName}"

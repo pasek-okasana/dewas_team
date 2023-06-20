@@ -1,61 +1,16 @@
 import 'package:flutter/material.dart';
 
-import '../../utility/theme.dart';
+import '../../../core/config/theme/theme.dart';
 import '../home/tabbar_view/home_penanganan_page.dart';
 import '../home/tabbar_view/home_ditangani_page.dart';
 import '../home/tabbar_view/home_selesai_page.dart';
+import '../../widgets/custom_appbar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    AppBar appBar() {
-      Widget flexibleSpace() {
-        return SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(10, 12, 10, 12),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Image.asset('assets/img/img_logo_bpbd.png'),
-                Container(
-                  margin: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Denpasar',
-                        style: blueTextStyle.copyWith(
-                          fontSize: sizeHeading,
-                          fontWeight: semiBold,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        'DEWaS',
-                        style: redTextStyle.copyWith(
-                          fontSize: sizeHeading,
-                          fontWeight: semiBold,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        );
-      }
-
-      return AppBar(
-        toolbarHeight: 115,
-        flexibleSpace: flexibleSpace(),
-        backgroundColor: kWhiteColor,
-        elevation: 2,
-      );
-    }
-
     Widget tabBarCustom() {
       TabBar tabBar() {
         Widget tabTitle(String title) {
@@ -72,9 +27,9 @@ class HomePage extends StatelessWidget {
         }
 
         return TabBar(
-          labelColor: kPrimaryColor,
-          indicatorColor: kPrimaryColor,
-          unselectedLabelColor: kGreyColor,
+          labelColor: primaryColor,
+          indicatorColor: primaryColor,
+          unselectedLabelColor: greyColor,
           tabs: [
             tabTitle('Penanganan'),
             tabTitle('Ditangani'),
@@ -120,8 +75,11 @@ class HomePage extends StatelessWidget {
     }
 
     return Scaffold(
-      backgroundColor: kBackgroundColor,
-      appBar: appBar(),
+      backgroundColor: backgroundColor,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(CustomAppbar().heightAppBar()),
+        child: CustomAppbar(title: ""),
+      ),
       body: tabBarCustom(),
     );
   }

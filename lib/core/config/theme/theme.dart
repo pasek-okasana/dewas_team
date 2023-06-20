@@ -4,8 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 double defaultMargin = 10;
 double defaultMarginSmall = 10;
 
-double defaultRadius = 8;
-double defaultRadiusSmall = 6;
+double sizeRadiusRounded = 20;
+double sizeRadius = 8;
+double sizeRadiusSmall = 6;
 
 double sizeHeading = 26;
 double sizeTitle = 20;
@@ -15,13 +16,14 @@ double sizeBody = 12;
 double sizeCaption = 10;
 double sizeButtonSmall = 12;
 
-Color kPrimaryColor = const Color(0xffE0792B);
-Color kBlackColor = const Color(0xff141414);
-Color kBlueColor = const Color(0xff38AAFD);
-Color kRedColor = const Color(0xffFF2828);
-Color kGreyColor = const Color(0xffC9C9C9);
-Color kBackgroundColor = const Color(0xffFFFFFF);
-Color kWhiteColor = const Color(0xffFFFFFF);
+Color primaryColor = const Color(0xffE0792B);
+Color blackColor = const Color(0xff141414);
+Color blueColor = const Color(0xff38AAFD);
+Color redColor = const Color(0xffFF2828);
+Color greyColor = const Color(0xffC9C9C9);
+Color greyAccentColor = const Color(0xffF3F3F3);
+Color backgroundColor = const Color(0xffFFFFFF);
+Color whiteColor = const Color(0xffFFFFFF);
 // Color kColor = const Color(0xff);
 
 FontWeight regular = FontWeight.w400;
@@ -29,16 +31,19 @@ FontWeight medium = FontWeight.w500;
 FontWeight semiBold = FontWeight.w600;
 
 TextStyle blackTextStyle = GoogleFonts.inter(
-  color: kBlackColor,
+  color: blackColor,
 );
 TextStyle blueTextStyle = GoogleFonts.inter(
-  color: kBlueColor,
+  color: blueColor,
+);
+TextStyle greyTextStyle = GoogleFonts.poppins(
+  color: greyColor,
 );
 TextStyle redTextStyle = GoogleFonts.inter(
-  color: kRedColor,
+  color: redColor,
 );
 TextStyle whiteTextStyle = GoogleFonts.inter(
-  color: kWhiteColor,
+  color: whiteColor,
 );
 TextStyle tabTextStyle = GoogleFonts.inter(
   fontSize: 14,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../utility/theme.dart';
-import '../../../view/widgets/pertolongan_cepat_item.dart';
+import '../../../../core/config/theme/theme.dart';
+import '../../../widgets/pertolongan_cepat_item.dart';
 
 // ignore: must_be_immutable
 class HomeDitanganiPage extends StatelessWidget {

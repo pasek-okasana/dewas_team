@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../utility/theme.dart';
+import '../../core/config/theme/theme.dart';
 import 'home/home_page.dart';
 
 class BottomNavigationPage extends StatefulWidget {
@@ -44,34 +44,34 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kBackgroundColor,
+      backgroundColor: backgroundColor,
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: const Icon(Icons.home),
             label: 'Beranda',
-            backgroundColor: kWhiteColor,
+            backgroundColor: whiteColor,
           ),
           BottomNavigationBarItem(
             icon: const Icon(Icons.search),
             label: 'Pencarian',
-            backgroundColor: kWhiteColor,
+            backgroundColor: whiteColor,
           ),
           BottomNavigationBarItem(
             icon: const Icon(Icons.newspaper),
             label: 'Berita',
-            backgroundColor: kWhiteColor,
+            backgroundColor: whiteColor,
           ),
           BottomNavigationBarItem(
             icon: const Icon(Icons.person),
             label: 'Profil',
-            backgroundColor: kWhiteColor,
+            backgroundColor: whiteColor,
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: kPrimaryColor,
-        unselectedItemColor: kGreyColor,
+        selectedItemColor: primaryColor,
+        unselectedItemColor: greyColor,
         showUnselectedLabels: true,
         onTap: _onItemTapped,
       ),

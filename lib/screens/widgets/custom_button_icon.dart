@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../utility/theme.dart';
+import '../../core/config/theme/theme.dart';
 
 class CustomButtonIcon extends StatelessWidget {
   final String title;
@@ -36,7 +36,7 @@ class CustomButtonIcon extends StatelessWidget {
         style: TextButton.styleFrom(
           backgroundColor: color,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(defaultRadiusSmall),
+            borderRadius: BorderRadius.circular(sizeRadius),
           ),
         ),
         child: Row(

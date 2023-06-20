@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../utility/theme.dart';
+import '../../core/config/theme/theme.dart';
 import 'custom_button_icon.dart';
 
 class PertolonganCepatItem extends StatelessWidget {
@@ -70,7 +70,7 @@ class PertolonganCepatItem extends StatelessWidget {
                 title: titleButton,
                 width: sizeButtonCenter(),
                 height: 37,
-                color: kPrimaryColor,
+                color: primaryColor,
                 fontSize: sizeButton,
                 fontWeight: medium,
                 onPressed: onTapAction,
@@ -80,7 +80,7 @@ class PertolonganCepatItem extends StatelessWidget {
                   margin: const EdgeInsets.only(left: 8),
                   child: Image.asset(
                     _iconKategori(),
-                    color: kWhiteColor,
+                    color: whiteColor,
                   ),
                 ),
               ),
@@ -97,10 +97,10 @@ class PertolonganCepatItem extends StatelessWidget {
             height: 44,
             width: double.infinity,
             decoration: BoxDecoration(
-              color: kWhiteColor.withOpacity(0.75),
+              color: whiteColor.withOpacity(0.75),
               borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(defaultRadius),
-                  bottomRight: Radius.circular(defaultRadius)),
+                  bottomLeft: Radius.circular(sizeRadius),
+                  bottomRight: Radius.circular(sizeRadius)),
             ),
             child: Row(
               children: [
@@ -132,7 +132,7 @@ class PertolonganCepatItem extends StatelessWidget {
                   title: 'Lihat Lokasi ',
                   height: 30,
                   width: 115,
-                  color: kRedColor,
+                  color: redColor,
                   fontSize: sizeButtonSmall,
                   fontWeight: medium,
                   onPressed: onTapAction,
@@ -171,7 +171,7 @@ class PertolonganCepatItem extends StatelessWidget {
         vertical: 8,
       ),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(defaultRadius),
+        borderRadius: BorderRadius.circular(sizeRadius),
         image: DecorationImage(
           fit: BoxFit.cover,
           image: AssetImage(_imgKategori()),

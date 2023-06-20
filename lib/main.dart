@@ -1,7 +1,6 @@
-import 'package:dewas_team/utility/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'view/bottom_navigation_page.dart';
+import 'package:get/get.dart';
+import 'core/routes/app_pages.dart';
 // import 'view/home/home_page.dart';
 // import 'utility/theme.dart';
 
@@ -15,21 +14,27 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'DEWaS Team Apps',
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        appBarTheme: AppBarTheme(
-          systemOverlayStyle: SystemUiOverlayStyle(
-            // Status bar color
-            statusBarColor: kPrimaryColor,
-            // Status bar brightness (optional)
-            statusBarIconBrightness: Brightness.light, // For Android (icons)
-            statusBarBrightness: Brightness.dark, // For iOS (icons)
-          ),
-        ),
-      ),
-      home: const BottomNavigationPage(),
+      title: "Qr Code Products",
+      initialRoute: AppPages.INITIAL,
+      getPages: AppPages.routes,
     );
+    // return MaterialApp(
+    //   title: 'DEWaS Team Apps',
+    //   debugShowCheckedModeBanner: false,
+    //   theme: ThemeData(
+    //     appBarTheme: AppBarTheme(
+    //       systemOverlayStyle: SystemUiOverlayStyle(
+    //         // Status bar color
+    //         statusBarColor: kPrimaryColor,
+    //         // Status bar brightness (optional)
+    //         statusBarIconBrightness: Brightness.light, // For Android (icons)
+    //         statusBarBrightness: Brightness.dark, // For iOS (icons)
+    //       ),
+    //     ),
+    //   ),
+    //   home: const BottomNavigationPage(),
+    // );
   }
 }
