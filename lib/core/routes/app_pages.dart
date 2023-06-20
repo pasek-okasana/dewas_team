@@ -4,7 +4,6 @@ import '../../screens/bottom_navigation/bottom_navigation_page.dart';
 import '../../screens/detail_emergency/bindings/detail_binding.dart';
 import '../../screens/detail_emergency/detail_page.dart';
 import '../../screens/bottom_navigation/bindings/bottom_binding.dart';
-import '../../screens/bottom_navigation/home/home_page.dart';
 import '../../screens/login/bindings/login_binding.dart';
 import '../../screens/login/login_page.dart';
 
